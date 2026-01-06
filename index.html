@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - HidraApp</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1976D2;
+            border-bottom: 3px solid #1976D2;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #424242;
+            margin-top: 30px;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .highlight {
+            background-color: #e3f2fd;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .contact {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid #1976D2;
+            margin: 20px 0;
+        }
+        .separator {
+            border-top: 2px solid #e0e0e0;
+            margin: 40px 0;
+            padding-top: 40px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Política de Privacidad de HidraApp</h1>
+        <p class="last-updated"><strong>Última actualización:</strong> 6 de enero de 2025</p>
+
+        <h2>Introducción</h2>
+        <p>HidraApp ("nosotros", "nuestra", "la aplicación") se compromete a proteger su privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos su información cuando utiliza nuestra aplicación móvil HidraApp.</p>
+
+        <h2>Información que Recopilamos</h2>
+        <p>HidraApp está diseñada para funcionar completamente sin conexión. Toda la información se almacena localmente en su dispositivo.</p>
+
+        <h3>Datos Recopilados Localmente</h3>
+        <p>La aplicación recopila y almacena la siguiente información <span class="highlight">únicamente en su dispositivo</span>:</p>
+        <ol>
+            <li><strong>Registros de Consumo de Agua:</strong>
+                <ul>
+                    <li>Cantidad de agua consumida (en mililitros)</li>
+                    <li>Fecha y hora de cada registro</li>
+                    <li>Número total de vasos consumidos</li>
+                </ul>
+            </li>
+            <li><strong>Configuraciones del Usuario:</strong>
+                <ul>
+                    <li>Meta diaria de consumo de agua</li>
+                    <li>Capacidad del vaso predeterminado</li>
+                    <li>Preferencias de recordatorios (intervalo y activación/desactivación)</li>
+                </ul>
+            </li>
+            <li><strong>Estadísticas Diarias:</strong>
+                <ul>
+                    <li>Totales diarios de consumo</li>
+                    <li>Resumen de días donde se alcanzó la meta</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Información NO Recopilada</h3>
+        <ul>
+            <li>✅ <strong>NO recopilamos información personal identificable</strong> (nombre, email, dirección, etc.)</li>
+            <li>✅ <strong>NO recopilamos datos de ubicación</strong></li>
+            <li>✅ <strong>NO recopilamos información de contacto</strong></li>
+            <li>✅ <strong>NO recopilamos datos de salud sensibles</strong> más allá del consumo de agua</li>
+            <li>✅ <strong>NO compartimos datos con terceros</strong></li>
+            <li>✅ <strong>NO utilizamos servicios de análisis o publicidad</strong></li>
+            <li>✅ <strong>NO tenemos acceso a sus datos</strong> (todo se almacena localmente)</li>
+        </ul>
+
+        <h2>Cómo Usamos la Información</h2>
+        <p>La información recopilada se utiliza <span class="highlight">exclusivamente</span> para:</p>
+        <ul>
+            <li>Proporcionar funcionalidad básica de seguimiento de consumo de agua</li>
+            <li>Mostrar estadísticas y progreso diario</li>
+            <li>Enviar recordatorios de hidratación (si están habilitados)</li>
+            <li>Mejorar la experiencia del usuario dentro de la aplicación</li>
+        </ul>
+
+        <h2>Almacenamiento de Datos</h2>
+        <ul>
+            <li>Todos los datos se almacenan <span class="highlight">localmente en su dispositivo</span> usando SQLite</li>
+            <li>Los datos <strong>NO se transmiten a servidores externos</strong></li>
+            <li>Los datos <strong>NO se sincronizan con servicios en la nube</strong></li>
+            <li>Los datos se eliminan cuando:
+                <ul>
+                    <li>Desinstala la aplicación</li>
+                    <li>Limpia los datos de la aplicación desde la configuración del dispositivo</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Permisos de la Aplicación</h2>
+        <p>HidraApp solicita los siguientes permisos:</p>
+        <ul>
+            <li><strong>POST_NOTIFICATIONS</strong> (Android 13+): Para mostrar recordatorios de hidratación</li>
+            <li><strong>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</strong>: Para programar recordatorios precisos</li>
+            <li><strong>RECEIVE_BOOT_COMPLETED</strong>: Para reiniciar los recordatorios después de reiniciar el dispositivo</li>
+        </ul>
+        <p>Estos permisos son necesarios para la funcionalidad de recordatorios y <strong>NO se utilizan para recopilar información personal</strong>.</p>
+
+        <h2>Seguridad</h2>
+        <ul>
+            <li>Todos los datos se almacenan localmente en su dispositivo</li>
+            <li>No utilizamos encriptación adicional ya que los datos no salen de su dispositivo</li>
+            <li>Recomendamos mantener su dispositivo protegido con una contraseña o PIN</li>
+        </ul>
+
+        <h2>Sus Derechos</h2>
+        <p>Dado que todos los datos se almacenan localmente:</p>
+        <ul>
+            <li><strong>Acceso:</strong> Puede ver todos sus datos dentro de la aplicación</li>
+            <li><strong>Modificación:</strong> Puede editar o eliminar registros en cualquier momento desde la aplicación</li>
+            <li><strong>Eliminación:</strong> Puede eliminar todos los datos desinstalando la aplicación o limpiando los datos desde la configuración del dispositivo</li>
+        </ul>
+
+        <h2>Cambios a esta Política de Privacidad</h2>
+        <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Le notificaremos de cualquier cambio publicando la nueva política en esta página y actualizando la fecha de "Última actualización".</p>
+
+        <h2>Contacto</h2>
+        <div class="contact">
+            <p>Si tiene preguntas sobre esta Política de Privacidad, puede contactarnos en:</p>
+            <ul>
+                <li><strong>Email:</strong> [Tu email de contacto]</li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/galiano11/hidraapp-privacy">https://github.com/galiano11/hidraapp-privacy</a></li>
+            </ul>
+        </div>
+
+        <p><strong>Nota Importante:</strong> HidraApp es una aplicación completamente local y no recopila, transmite ni comparte ningún dato con servicios externos. Su privacidad está completamente protegida.</p>
+
+        <div class="separator"></div>
+
+        <h1>HidraApp Privacy Policy</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> January 6, 2025</p>
+
+        <h2>Introduction</h2>
+        <p>HidraApp ("we", "our", "the application") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your information when you use our HidraApp mobile application.</p>
+
+        <h2>Information We Collect</h2>
+        <p>HidraApp is designed to work completely offline. All information is stored locally on your device.</p>
+
+        <h3>Locally Collected Data</h3>
+        <p>The application collects and stores the following information <span class="highlight">only on your device</span>:</p>
+        <ol>
+            <li><strong>Water Consumption Records:</strong>
+                <ul>
+                    <li>Amount of water consumed (in milliliters)</li>
+                    <li>Date and time of each record</li>
+                    <li>Total number of glasses consumed</li>
+                </ul>
+            </li>
+            <li><strong>User Settings:</strong>
+                <ul>
+                    <li>Daily water consumption goal</li>
+                    <li>Default glass capacity</li>
+                    <li>Reminder preferences (interval and on/off)</li>
+                </ul>
+            </li>
+            <li><strong>Daily Statistics:</strong>
+                <ul>
+                    <li>Daily consumption totals</li>
+                    <li>Summary of days where goal was achieved</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Information NOT Collected</h3>
+        <ul>
+            <li>✅ <strong>We do NOT collect personally identifiable information</strong> (name, email, address, etc.)</li>
+            <li>✅ <strong>We do NOT collect location data</strong></li>
+            <li>✅ <strong>We do NOT collect contact information</strong></li>
+            <li>✅ <strong>We do NOT collect sensitive health data</strong> beyond water consumption</li>
+            <li>✅ <strong>We do NOT share data with third parties</strong></li>
+            <li>✅ <strong>We do NOT use analytics or advertising services</strong></li>
+            <li>✅ <strong>We do NOT have access to your data</strong> (everything is stored locally)</li>
+        </ul>
+
+        <h2>How We Use Information</h2>
+        <p>The information collected is used <span class="highlight">exclusively</span> for:</p>
+        <ul>
+            <li>Providing basic water consumption tracking functionality</li>
+            <li>Displaying statistics and daily progress</li>
+            <li>Sending hydration reminders (if enabled)</li>
+            <li>Improving user experience within the application</li>
+        </ul>
+
+        <h2>Data Storage</h2>
+        <ul>
+            <li>All data is stored <span class="highlight">locally on your device</span> using SQLite</li>
+            <li>Data is <strong>NOT transmitted to external servers</strong></li>
+            <li>Data is <strong>NOT synced with cloud services</strong></li>
+            <li>Data is deleted when:
+                <ul>
+                    <li>You uninstall the application</li>
+                    <li>You clear app data from device settings</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Application Permissions</h2>
+        <p>HidraApp requests the following permissions:</p>
+        <ul>
+            <li><strong>POST_NOTIFICATIONS</strong> (Android 13+): To show hydration reminders</li>
+            <li><strong>SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</strong>: To schedule precise reminders</li>
+            <li><strong>RECEIVE_BOOT_COMPLETED</strong>: To restart reminders after device reboot</li>
+        </ul>
+        <p>These permissions are necessary for reminder functionality and <strong>are NOT used to collect personal information</strong>.</p>
+
+        <h2>Security</h2>
+        <ul>
+            <li>All data is stored locally on your device</li>
+            <li>We do not use additional encryption as data does not leave your device</li>
+            <li>We recommend keeping your device protected with a password or PIN</li>
+        </ul>
+
+        <h2>Your Rights</h2>
+        <p>Since all data is stored locally:</p>
+        <ul>
+            <li><strong>Access:</strong> You can view all your data within the application</li>
+            <li><strong>Modification:</strong> You can edit or delete records at any time from the application</li>
+            <li><strong>Deletion:</strong> You can delete all data by uninstalling the application or clearing data from device settings</li>
+        </ul>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last Updated" date.</p>
+
+        <h2>Contact</h2>
+        <div class="contact">
+            <p>If you have questions about this Privacy Policy, you can contact us at:</p>
+            <ul>
+                <li><strong>Email:</strong> [Your contact email]</li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/galiano11/hidraapp-privacy">https://github.com/galiano11/hidraapp-privacy</a></li>
+            </ul>
+        </div>
+
+        <p><strong>Important Note:</strong> HidraApp is a completely local application and does not collect, transmit, or share any data with external services. Your privacy is fully protected.</p>
+    </div>
+</body>
+</html>
+
